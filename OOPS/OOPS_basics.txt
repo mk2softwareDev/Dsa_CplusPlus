@@ -1,0 +1,34 @@
+
+- OOPS comes wth concept of class and object.
+- Its a paradigm for modelling real world function of entities to program, here any template is already defined but just we create instance of pre
+  defined templates
+  OOPS.class()
+  {
+       Definition :
+                           class is user defined data type.
+                           its pre existing template.
+       Reason :
+                       Real world system and entities functions like class, so used to map real world entities
+
+       Memory()
+       {
+                       Class never occupies the memory of system
+                       class.RAM.system() == 0;
+
+       }
+
+       class.object() {
+
+                  Properties:
+                                     properties.DataMembers( variables );
+                                     properties.MemberFunctions( functions )
+
+                  Definition:
+                                     object is instance of class
+                                     occupies physical memory on basis of defined properties() of class
+                                     If ( class.properties == 0 ) {
+                                          object.Memory() == 1 B ;   // to track the object in system's memory
+                                     }
+
+       }
+  }

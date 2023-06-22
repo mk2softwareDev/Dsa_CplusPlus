@@ -1,0 +1,12 @@
+Destructor() {
+                        1. Member function to deallocate memory occupied by object
+                        2. no return type
+                        3. no parameters
+                        4. automatically called by compiler
+}
+~class(){
+              // before the object's scope is finished in the function
+              1. In static allocation of objects, destructor is automatically called
+              2. In dynamic allocation of objects, destructor must be manually called
+}
+
