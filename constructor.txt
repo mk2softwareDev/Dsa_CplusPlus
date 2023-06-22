@@ -1,0 +1,66 @@
+Constructor
+
+- its an function that gets created by compiler whenever class is made
+- it does not have return type
+
+Constructor ()
+{
+     Default constructor :
+                                           if (class = initiated){
+                                           class object;
+                                           compiler.calls( object.class() ) // object calls a function named as class by default
+                                           }
+     User constructor :
+                                          if( class = initiated )
+                                          // user creation
+                                          class(){
+
+                                          execute statements;
+
+                                          }
+                                          // object is made
+                                          class object;
+                                           // once user makes the constructor named as class, default constructor gets destroyed
+
+                                          compiler.destroys( object.class() )
+                                          compiler.calls( class() ) {
+                                             returns class();                                      // execute statements inside class()
+                                          }
+    Member initializers:
+                                       {
+                                       A constructor can have choice of default data member lists
+
+                                       property:
+                                       initializes class members before the constructor body runs, it is helpful
+                                       to have this habit as we don't have to think in edge case of Dynamic allocation of object
+
+                                       class *object = new class() ;
+                                       // initializes class members before the constructor body runs, it is helpful WHY ??
+                                       -------------------------------------------------------------------------------
+                                       hence, whenever the scope of function is finished still object is accessible and not destroyed
+                                       but data members and member functions were accessible only inside int main() function.
+                                       So, even though class properties are accessible by objects ( constructor ) but properties of
+                                       class will not be accessible beyond the scope of int main() function. So, it's better to
+                                       declare constructor with member initializer list so that properties of class which remains
+                                       restricted to scope of function and object (dynamically allocated) trying to access properties
+                                       outside scope of function, this will not be in sync thus giving errors in compilation.
+                                       -------------------------------------------------------------------------------
+
+                                       }
+                                       example of memberInitializer
+                                       {
+                                           class (int width, int length, int height)
+                                                   : m_width(width), m_length(length), m_height(height)
+                                               {
+                                                  Body of constructor
+                                               }
+                                       }
+                                       this keyword:
+                                                {
+                                                   it's pointer pointing to current objects address
+                                                   class( data type property ){
+                                                   this -> property = property ;
+                                                   }
+                                                   in property of  object is feed with property of argument of object as a form of input
+                                                }
+}
